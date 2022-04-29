@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza Order Form</title>
+        <link rel="icon" href="TATCO_IMAGES_ITAD/hamburger.jpg" type="image/x-icon">
+        <style type="text/css">
+        .burger
+        {
+          margin: 0px;
+        }
+        body
+        {
+          font-family: verdana;
+          background-image: url(TATCO_IMAGES_ITAD/burger.jpg);
+          background-repeat: no-repeat;
+          background-attachment:fixed;
+          background-size: cover;
+        }
+        fieldset
+        {
+          width:500px;
+          margin:auto;
+          height:auto;
+          background-color: whitesmoke;
+          opacity: 0.80;
+        }
+        legend
+        {
+          font-size: 25px;
+        }
+        label
+        {
+          font-size: 14px;
+        }
+        .submit 
+        {
+          font-size: 20px;
+          border-style: ridge;
+          background-color: white;
+          color: black;
+          text-decoration: none;
+          border-color: gray;
+        }
+        h1
+        {
+          font-family: tahoma;
+          text-shadow: 3px 3px white;
+          text-align: center;
+          width:100px;
+          margin-left: 650px;
+        }
+        a
+        {
+          text-decoration: none;
+          display: inline-block;
+          color: black;
+          font-size: 16px;
+          padding: 10px;
+          margin-top: 10px;
+          border: 1px solid white;
+          border-radius: 100px;
+          transition: all .3s ease;
+          text-shadow: 0 1rem 1rem coral;
+          border-color: black;
+        }
+        a:hover{
+          background-color: chocolate;
+          border: 1px solid white;
+          box-shadow: 0 0 2rem gray;
+          color: whitesmoke;
+        } 
+        
+        </style>
+    </head>
+    <body background="gray">
+      <a href="LandingPAge.html">HOME</a>
+      <h1>Menu</h1>
+        <section>
+          <form action="" method="post">
+            <fieldset >
+                <legend><b> Information </b></legend>
+                  <label for="fullname"><b> Name: </b></label>
+                  <input type="text" name="fullname" id="fullname" placeholder="Name" required>
+                <BR>
+                  <label for="email"><b> Email: </b></label>
+                  <input type="email" name="email" id="email" placeholder="Email"required>
+                <BR>
+                  <label for="Address"><b>Address: </b></label>
+                  <input type="Address" name="Address" id="Address" placeholder="Address"required>
+                <BR>
+                  <label for="phone"><b>Phone: </b></label>
+                  <input type="phone" name="phone" id="phone" placeholder="Phone" required>
+                <BR>
+                <div>
+                  <label for="message" ><b> Description of how to get to the place: </b></label>
+                  <br>
+                  <textarea name="message" id="message" placeholder="Please fill your statement here." required></textarea>
+                </div>
+              </fieldset>  
+          </form>
+          <br>
+          <form action="" method="post">
+          <fieldset>
+          <legend><b> Order/s </b></legend>
+          <div>
+            <p><b>Please check all the orders you want:</b></p>
+            <div>
+            <p class="burger"><b>Burger</b></p>   
+            <input type="radio" name="Single" id="Single" >
+            <label for="Single">Single Patty</label>
+            <input type="radio" name="Single" id="Double" >
+            <label for="Double">Double Patty</label>
+            </div>
+            <div>
+            <p class="burger"><b>Toppings</b></p>   
+            <input type="checkbox" name="Cheese" id="Cheese">
+            <label for="Cheese">With Cheese</label>
+
+            <br>
+
+            <input type="checkbox" name="Coleslaw" id="Coleslaw">
+            <label for="Coleslaw">With Coleslaw</label>
+            
+            <br>
+
+            <input type="checkbox" name="tomato" id="tomato">
+            <label for="tomato">with Tomato</label>
+
+            <br>
+
+            <input type="checkbox" name="Onion" id="Onion">
+            <label for="Onion">with Onion</label>
+
+            <br>
+
+            <input type="checkbox" name="Cucumber" id="Cucumber">
+            <label for="Cucumber">with Cucumber</label>
+
+            <br>
+
+            <input type="checkbox" name="Bacon" id="Bacon">
+            <label for="Bacon">with Bacon</label>
+          </div>
+          </div>
+          <h2>Adds On</h2>
+
+          <div>
+            <input type="checkbox" name="addsOn" id="addsOn">
+            <label for="addsOn">with cheese</label>
+            <br>
+
+            <input type="checkbox" name="addsOn" id="addsOn">
+            <label for="addsOn">coleslaw</label>
+            <br>
+
+            <input type="checkbox" name="addsOn" id="addsOn">
+            <label for="addsOn">tomato</label>
+            <br>
+
+            <input type="checkbox" name="addsOn" id="addsOn">
+            <label for="addsOn">onion</label>
+            <br>
+
+            <input type="checkbox" name="addsOn" id="addsOn">
+            <label for="addsOn">cucumber</label>
+            <br>
+
+            <input type="checkbox" name="addsOn" id="addsOn">
+            <label for="addsOn">bacon</label>
+          </div>
+
+          <div class="bun">
+          <h2>Choice of Bun</h2>
+          <div>
+            <input type="radio" name="wheatbun" id="whitebun">
+            <label for="whitebun">white bun</label>
+              
+            <input type="radio" name="wheatbun" id="wheatbun">
+            <label for="wheatbun">wheat bun</label>
+            <br><br>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" id="quantity" max="500">
+          </div>
+          </div>
+          <div class="pasta">
+          
+          <div class="pasta">
+            <h2>Pasta</h2>
+            <input type="radio" name="pasta" id="Carbonara">      
+            <label for="Carbonara">Carbonara </label>
+              
+            <br>
+            <input type="radio" name="pasta" id="Pesto">     
+            <label for="Pesto"> Pesto </label>
+
+            <br>
+            <input type="radio" name="pasta" id="Spaghetti">      
+            <label for="Spaghetti">Spaghetti </label>
+            
+            <br>
+            <input type="radio" name="pasta" id="Salsa">      
+            <label for="Salsa">Salsa </label>
+            
+            <br>
+            <input type="radio" name="pasta" id="Pomodoro">      
+            <label for="Pomodoro">Pomodoro </label>
+            
+            <br>
+            <label for="quantity">Pasta Per Box </label>
+            <input type="number" name="quantity" id="quantity" min="50">
+            
+            
+          </div>
+          </div class="fries">
+          <h2>Fries</h2>
+            <div class="size">
+            <label for="size" required><b>Size: </b></label>
+            <select name="size" id="size">
+              <option value=""></option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            </div>
+
+            <div class="flavor">
+            <label for="flavor"><b>Flavor:</b></label>
+            <select name="flavor" id="flavor">
+              <option value=""></option>
+              <option value="bbq">bbq</option>
+              <option value="cheese">cheese</option>
+              <option value="sour cream">sour cream</option>
+            </select>
+            </div>
+            <div>
+              <label for="quantity"><b>Quantity:</b></label>
+              <input type="number" name="quantity" id="quantity" required>
+            </div>
+          <div>
+          
+          <div class="drinks">
+            <h2>Drinks</h2>
+            <label for="drinks" required><b>Select Drinks:</b></label>
+
+            <br>
+
+            <input type="radio" name="drinks" id="Coke">
+            <label for="Coke">Coke</label>
+            <br>      
+            <input type="radio" name="drinks" id="Sprite">
+            <label for="Sprite">Sprite</label>
+            <br>      
+            <input type="radio" name="drinks" id="MountainDew">
+            <label for="MountainDew">Mountain Dew</label>
+            <br>                        
+            <input type="radio" name="drinks" id="Pepsi">
+            <label for="Pepsi">Pepsi</label>
+            <br>            
+            <input type="radio" name="drinks" id="Nestea">
+            <label for="Nestea">Nestea</label>
+            <br>              
+            <input type="radio" name="drinks" id="RootBear">
+            <label for="RootBear">Root Bear</label>
+              </div>
+          </div>
+          <br>
+          <label for="size" required><b> Sizes: </b></label >
+
+          <div>
+            <label for="size">Small</label>
+            <input type="radio" name="size" id="size">
+          </div>
+
+          <div>
+            <label for="size">Medium</label>
+            <input type="radio" name="size" id="size">
+          </div>
+
+        <div>
+            <label for="size">Large</label>
+            <input type="radio" name="size" id="size">
+          </div>
+
+          <div>
+            <label for="quantity"><b>Quantity</b></label>
+            <input type="number" name="quantity" id="quantity" required>
+          </div>
+
+          
+          <div class="delivery">
+            <h2>Delivery</h2>
+            <label for="delivery">Self Pick-Up</label>
+            <input type="radio" name="delivery" id="delivery">
+          </div>
+          <div>
+            <label for="delivery">Delivery</label>
+            <input type="radio" name="delivery" id="delivery">
+          </div> 
+
+          <br>
+          <div>
+            <div class="payment">
+            <label for="Location">Payment method</label>
+              <select name="Payment" id="Payment" required>
+                <option value=""selected></option>
+              <option value="Gcash">Gcash</option>
+              <option value="COD">Cash on delivery</option>
+            </select>
+            </div>
+          <p>If Gcash, Please Enter your Number and name Itself For verification:</p>
+          <div>
+          &nbsp;<input type="text" name="fullname" id="fullname" placeholder="Name" required>
+          <label for="fullname"><b> Name: </b></label>  
+            <br>
+            <label for="phone"><b>Phone: </b></label>
+            <input type="phone" name="phone" id="phone" placeholder="Phone" required>
+          </div>
+          </select>
+          </div>
+
+          <br><br>
+
+          <input type="submit" id="submit" name="submit">
+          <input type="reset" id="clear" name="clear" value="Clear">
+        </fieldset>  
+        </form>
+      </body>
+</html>
+        
